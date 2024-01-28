@@ -34,30 +34,26 @@ with open( "styles/main.css" ) as css:
 st.title("ATSPro: The ATS-Conquering Companion")
 st.subheader("Cross the ATS Hurdle: Unlock Your Career Potential with Precision and Insight")
 
-
-
 #Set BAckground Image
-def set_bg_hack_url():
-    '''
-    A function to unpack an image from url and set as bg.
-    Returns
-    -------
-    The background.
-    '''
+def set_bg_image(image_file):
+    with open(image_file, "rb") as file:
+        # Use base64 to encode the image file
+        encoded_image = pybase64.b64encode(file.read()).decode()
 
-    st.markdown(
-        f"""
-            <style>
-            .stApp {{
-                background: url("https://images.unsplash.com/photo-1530036846422-afb4b7af2fd4?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fFJlc3VtZSUyMEhpcmluZ3xlbnwwfHwwfHx8MA%3D%3D");
-                background-size: cover
-            }}
-            </style>
-            """,
-        unsafe_allow_html=True
-    )
+    # Set the background using CSS styles
+    css_style = f"""
+    <style>
+    .stApp {{
+        background-image: url("data:image/png;base64,{encoded_image}");
+        background-size: cover;
+        background-position: center;
+    }}
+    </style>
+    """
 
-set_bg_hack_url()
+    st.markdown(css_style, unsafe_allow_html=True)
+
+set_bg_image("background.JPG")
 
 st.write("""_**ATSPro**_ is your strategic ally in mastering the **Applicant Tracking System (ATS)** challenge, powered by the advanced capabilities of _**Google Gemini Pro**_. This ATS Expert System is crafted to refine and align your resume with precision, ensuring it resonates with both the ATS algorithms and human recruiters' expectations.
 
