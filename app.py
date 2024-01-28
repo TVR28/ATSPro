@@ -65,8 +65,9 @@ st.write("""_**ATSPro**_ is your strategic ally in mastering the **Applicant Tra
 
 Through a deep analysis of your resume against specific job descriptions, _**ATSPro**_ identifies key areas for enhancement, from keyword optimization to structural improvements, making your application ATS-friendly. Our unique feature set also includes generating custom interview questions and answers, tailored to your resume and the job you're targeting, ensuring you're well-prepared for both technical and HR evaluations.""")
 
-# Role input
+st.write("**Note:** _**ATSPro**_ can make mistakes. Consider checking important information.")
 
+# Role input
 role = st.text_input("**What's the Job Role?**", 'Machine Learning Engineer')
 
 
