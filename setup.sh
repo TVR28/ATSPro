@@ -8,6 +8,6 @@ port = $PORT\n\
 [theme]\n\
 primaryColor = '#7393B3'\n\
 backgroundColor = '#808080'\n\
-secondaryBackgroundColor = '#A9A9A9'\n\
+secondaryBackgroundColor = '#FFFFFF'\n\
 textColor = '#000000'\n\
 " > ~/.streamlit/config.toml
