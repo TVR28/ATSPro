@@ -69,6 +69,9 @@ After installation, you can start ATSPro by running the Streamlit application:
 
 ```bash
 streamlit run app.py
+```
+
+
 
 ## Usage
 
