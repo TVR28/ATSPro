@@ -11,7 +11,7 @@ import PyPDF2 as pdf
 import google.generativeai as genai
 import time
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=os.getenv("YOUR_GOOGLE_API_KEY"))
 
 def get_gemini_response(input):
     model = genai.GenerativeModel('gemini-pro')
