@@ -5,7 +5,7 @@
 
 ATSPro is a state-of-the-art Streamlit application designed to empower job seekers in conquering Applicant Tracking Systems (ATS) with unmatched precision and insight. This README provides comprehensive guidance on setting up and utilizing ATSPro to enhance your job application process.
 
-Access the ATSPro Here: [ATSPro](https://atspro-75be453458c3.herokuapp.com/)
+
 
 ## Table of Contents
 
